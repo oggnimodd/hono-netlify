@@ -5,7 +5,8 @@
 	"private": true,
 	"scripts": {
 		"build": "./node_modules/.bin/tsdown",
-		"netlify:dev": "netlify dev"
+		"netlify:dev": "netlify dev",
+		"dev": "bun run --watch server.ts"
 	},
 	"devDependencies": {
 		"@netlify/functions": "^4.2.1",
@@ -16,6 +17,10 @@
 		"typescript": "^5.9.2"
 	},
 	"dependencies": {
+		"@orpc/client": "^1.8.1",
+		"@orpc/openapi": "^1.8.1",
+		"@orpc/server": "^1.8.1",
+		"@orpc/zod": "^1.8.1",
 		"hono": "^4.9.2"
 	}
 }
