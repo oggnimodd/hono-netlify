@@ -1,0 +1,21 @@
+{
+	"name": "hono-netlify",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "./node_modules/.bin/tsdown",
+		"netlify:dev": "netlify dev"
+	},
+	"devDependencies": {
+		"@netlify/functions": "^4.2.1",
+		"@types/bun": "latest",
+		"tsdown": "^0.14.1"
+	},
+	"peerDependencies": {
+		"typescript": "^5.9.2"
+	},
+	"dependencies": {
+		"hono": "^4.9.2"
+	}
+}

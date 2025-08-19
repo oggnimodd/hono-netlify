@@ -1,0 +1,12 @@
+[build]
+  command = "bun run build"
+  functions = "netlify/functions" 
+
+[dev]
+  autoLaunch = false 
+
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
